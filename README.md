@@ -4,12 +4,11 @@
 
 [Video Tutorial on Youtube](https://youtu.be/h991oLxOxeM)
 
-About This Course:
+About This project:
 
 -   🚀 Python virtual environment setup
 -   💬 Socket.io and Flask integration
 -   ✨ JavaScript on the frontend
--   ✅ Deployment at the end
 
 ### Run the App Locally
 
