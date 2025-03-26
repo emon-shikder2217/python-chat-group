@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python Chat Group</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.8.1/socket.io.js"
+      integrity="sha512-8BHxHDLsOHx+flIrQ0DrZcea7MkHqRU5GbTHmbdzMRnAaoCIkZ97PqZcXJkKZckMMhqfoeaJE+DNUVuyoQsO3Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="/static/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/static/tab_logo.png"
+      sizes="64x64"
+    />
+  </head>
+  <body>
+    <div class="chat-container">
+      <div class="chat-header"><h1>Group Chat</h1></div>
+      <hr />
+      <div class="username-container">
+        <span id="current-username"></span>
+        <input type="text" id="username-input" placeholder="New username" />
+        <button
+          style="--clr: rgb(0, 12, 255)"
+          class="button"
+          id="update-username-button"
+        >
+          <span class="span">Update Username</span>
+        </button>
+      </div>
+      <div id="chat-message"></div>
+      <div class="chat-input">
+        <input
+          type="text"
+          id="message-input"
+          placeholder="Type your message..."
+        />
+        <button id="send-button"><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </div>
+    <script src="/static/script.js"></script>
+  </body>
+</html>
